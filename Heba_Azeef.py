@@ -2,8 +2,15 @@ import streamlit as st
 
 st.set_page_config(page_icon=":ribbon:", layout="wide")
 
-st.title("Heba Azeef")
-st.subheader("Information technology: Software Engineering, UX Design, Business Analysis")
+col1, col2 = st.columns([1.0, 1.5])
+
+with col1:
+    st.image("headshot.png")
+
+with col2:
+    st.title("Heba Azeef")
+    st.subheader("Information technology: Software Engineering, UX Design, Business Analysis")
+
 st.write(":envelope_with_arrow: heba.azeef@gmail.com")
 st.write(":telephone_receiver: 437-350-7040")
 
