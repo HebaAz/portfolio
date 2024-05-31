@@ -11,13 +11,14 @@ with col2:
     st.title("Heba Azeef")
     st.subheader("Information technology: Software Engineering, UX Design, Business Analysis")
 
+    st.subheader("Professional summary: ")
+    st.write("Skilled Developer with a Bachelor's degree in Information Technology and experience in software development in Python, Java and User Interface (HTML, JavaScript, React). Experience in Business Analysis, Databases, Systems Analysis and Prototyping (Figma). I am authorized to work in the US as I am a dual US and Canadian citizen. I am currently in Canada for school, however am going to relocate based on where I work")
+
+
 st.write(":envelope_with_arrow: heba.azeef@gmail.com")
 st.write(":telephone_receiver: 437-350-7040")
 
 st.divider()
-
-st.subheader("Professional summary: ")
-st.write("Skilled Developer with a Bachelor's degree in Information Technology and experience in software development in Python, Java and User Interface (HTML, JavaScript, React). Experience in Business Analysis, Databases, Systems Analysis and Prototyping (Figma). I am authorized to work in the US as I am a dual US and Canadian citizen. I am currently in Canada for school, however am going to relocate based on where I work")
 
 st.subheader("A bit about me: ")
 st.write("Some of my hobbies include acrylic painting, scrapbooking, using new technology hands on, getting to know new people, and participating in hackathons.")
