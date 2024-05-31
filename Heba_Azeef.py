@@ -2,26 +2,29 @@ import streamlit as st
 
 st.set_page_config(page_icon=":ribbon:", layout="wide")
 
-col1, col2 = st.columns([1.0, 1.5])
+col1, mty, col2 = st.columns([1.0, 0.1, 1.5])
 
 with col1:
-    st.image("headshot.png", width=200)
+    st.image("headshot.png")
 
 with col2:
     st.title("Heba Azeef")
-    st.subheader("Information technology: Software Engineering, UX Design, Business Analysis")
+    st.caption("Information technology: Software Engineering, UX Design, Business Analysis")
 
-    st.subheader("Professional summary: ")
-    st.write("Skilled Developer with a Bachelor's degree in Information Technology and experience in software development in Python, Java and User Interface (HTML, JavaScript, React). Experience in Business Analysis, Databases, Systems Analysis and Prototyping (Figma). I am authorized to work in the US as I am a dual US and Canadian citizen. I am currently in Canada for school, however am going to relocate based on where I work")
-
+    st.write("**Professional summary:** Skilled Developer with a Bachelor's degree in Information Technology and experience in software development in Python, Java and User Interface (HTML, JavaScript, React). Experience in Business Analysis, Databases, Systems Analysis and Prototyping (Figma). I am authorized to work in the US as I am a dual US and Canadian citizen. I am currently in Canada for school, however am going to relocate based on where I work")
+    st.write("**A bit about me:** Some of my hobbies include acrylic painting, scrapbooking, learning new technology hands on, and participating in hackathons.")
 
 st.write(":envelope_with_arrow: heba.azeef@gmail.com")
 st.write(":telephone_receiver: 437-350-7040")
 
 st.divider()
 
+st.write("Hello! Welcome to my portfolio website! This site was built on Python, using the Streamlit module. This website is meant to showcase myself and my work in a fun, interactive way!")
+
+st.divider()
+
 st.subheader("A bit about me: ")
-st.write("Some of my hobbies include acrylic painting, scrapbooking, using new technology hands on, getting to know new people, and participating in hackathons.")
+st.write("")
 
 st.divider()
 
