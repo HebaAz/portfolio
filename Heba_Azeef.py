@@ -73,7 +73,7 @@ with col7:
 
 st.divider()
 
-st.subheader("Samples of my UI/UX design work on Figma:")
+st.image("UXHeader.png")
 st.page_link(f"pages/User Experience Design.py", label = "**Click here to see my UI/UX design work in detail**")
 
 col8, mty3, col9, mty4, col10 = st.columns([1.5, 0.1, 1.5, 0.1, 1.5])
