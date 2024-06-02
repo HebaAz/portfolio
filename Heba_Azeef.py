@@ -70,7 +70,6 @@ with col7:
 
     st.markdown(markdown_with_html, unsafe_allow_html=True)
 
-
 st.divider()
 
 st.image("UXHeader.png")
@@ -104,6 +103,8 @@ st.write("**Using and Designing Database Systems**: intermediate SQL skills, ERD
 st.write("**Object based programming**: Algorithm development. Java topics include primitive data types, control structures, classes and arrays. The use of API&#39;s to develop applications (A).")
 st.write("**Systems Analysis & Design (1 and 2)**: Design of system structure and interactions. UML diagrams in-depth, interaction design, requirements analysis, system and boundary design, object design, creation of RAD and SDD documents (A and A+)")
 st.write("**Enterprise Resource Planning Systems**: Learning about cloud technology, hands-on use of SAP using market simulations & data analysis (A+)**")
+
+st.divider()
 
 st.caption("Please note that some icons are not mine, however all code, apps, and Figma designs are created by me or created by myself in collaboration with others. Icons are simply used for viusal or learning purposes.")
 st.caption("Sources for icons: iconscout, Udemy Andrew Sulce, Figma libraries")
