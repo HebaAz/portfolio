@@ -29,7 +29,7 @@ st.write("Hello! Welcome to my portfolio website! This site was built on Python,
 st.divider()
 
 st.image('PythonHeader.png')
-st.write("Click the image to interact with the program")
+st.caption("Click the image to interact with the program")
 
 col5, col6, col7 = st.columns([1.5, 1.5, 1.5])
 
@@ -39,7 +39,7 @@ with col5:
     #st.page_link(page='pages\Todo List.py')
 
     markdown_with_html = """
-    <a href="http://google.com.au" target="_blank">
+    <a href="https://hebaazeefpy-8tyhtkhdfbjsvgzepnyfry.streamlit.app/Todo_List" target="_blank">
         <img src="https://cdn3d.iconscout.com/3d/premium/thumb/to-do-list-4727272-3928189.png" width="160">
     </a>
     """
