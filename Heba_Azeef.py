@@ -2,19 +2,19 @@ import streamlit as st
 
 st.set_page_config(page_icon=":ribbon:", layout="centered")
 
+st.title("Heba Azeef")
+st.caption("Information technology: Software Engineering, UX Design, Business Analysis")
+
 col1, col2 = st.columns([1.0, 1.5])
 
 with col1:
     st.image("headshot.png")
 
 with col2:
-    st.title("Heba Azeef")
-    st.caption("Information technology: Software Engineering, UX Design, Business Analysis")
-
     st.write("**Professional summary:** Skilled Developer with a Bachelor's degree in Information Technology and experience in software development in Python, Java and User Interface (HTML, JavaScript, React). Experience in Business Analysis, Databases, Systems Analysis and Prototyping (Figma). I am authorized to work in the US as I am a dual US and Canadian citizen. I am currently in Canada for school, however am going to relocate based on where I work")
     st.write("**A bit about me:** Some of my hobbies include acrylic painting, scrapbooking, learning new technology hands on, and participating in hackathons.")
 
-col3, col4, mty2 = st.columns([1.5, 1.5, 3.0])
+col3, col4, mty2 = st.columns([1.5, 1.5, 2])
 
 with col3:
     st.write(":envelope_with_arrow: heba.azeef@gmail.com")
