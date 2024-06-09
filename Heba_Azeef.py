@@ -2,10 +2,10 @@ import streamlit as st
 
 st.set_page_config(page_icon=":ribbon:", layout="wide")
 
-col1, mty1, col2 = st.columns([1.0, 0.1, 1.5])
+col1, col2 = st.columns([1.0, 1.5])
 
 with col1:
-    st.image("headshot_1.png")
+    st.image("headshot.png")
 
 with col2:
     st.title("Heba Azeef")
@@ -59,11 +59,11 @@ with col6:
     st.markdown(markdown_with_html, unsafe_allow_html=True)
 
 with col7:
-    st.write("<b>PDF Generator (from CSV files)</b>", unsafe_allow_html=True)
+    st.write("<b>PDF Generator (from CSV)</b>", unsafe_allow_html=True)
     #st.image('PDF_icon.png', width = 200)
     
     markdown_with_html = """
-    <a href="http://google.com.au" target="_blank">
+    <a href="https://github.com/HebaAz/PDF-Converter" target="_blank">
         <img src="https://cdn3d.iconscout.com/3d/premium/thumb/pdf-file-10766769-8639812.png?f=webp" width="200">
     </a>
     """
@@ -73,23 +73,34 @@ with col7:
 st.divider()
 
 st.image("UXHeader.png")
-st.page_link(f"pages/User Experience Design.py", label = "**Click here to see my UI/UX design work in detail**")
 
 col8, mty3, col9, mty4, col10 = st.columns([1.5, 0.1, 1.5, 0.1, 1.5])
 
 with col8:
     st.write("Wireframe of parking booking app \n (Hack ITE hackathon)")
-    st.image('ITE_1.png')
+    st.image(f'hackathons_images/ITE_1.png')
     st.link_button(label='View in Figma', url='https://www.figma.com/design/MvxZ16VElje4nDLR43XM23/Park-Smart?node-id=223-5763&t=GBRS5Lt0id46EQX0-1')
 
 with col9:
     st.write("Find therapists + social media prototype (Seneca Hackathon)")
-    st.image('Camatkar_summary.png')
+    st.image(f'hackathons_images/Camatkar_summary.png')
     st.link_button(label='Interact in Figma', url='https://www.figma.com/proto/j7b2LBiWJaXopTuPRdKJVT/Camatk%C4%81r?node-id=1-2&t=4ZZmWqSFUF0AB6YU-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1')
 
 with col10:
     st.write("Video walkthrough of booking system", unsafe_allow_html=True)
     st.video('https://youtu.be/7iBLZOTYzfA?si=ctbbKDuHH5pI0YqP')
+
+st.divider()
+
+st.write('The BIPOC Artist Hub is a group at York University that I had the pleasure of being a Stage Manager for throughout the past 3 years. Click the image to view my work, websites, and more in relation to the position')
+
+markdown_with_html = """
+<a href="http://google.com.au" target="_blank">
+    <img src= f"HubPhotos/HUBHeader.png">
+</a>
+"""
+
+st.markdown(markdown_with_html, unsafe_allow_html=True)
 
 st.divider()
 
