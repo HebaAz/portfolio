@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_icon=":ribbon:", layout="wide")
+st.set_page_config(page_icon=":ribbon:", layout="centered")
 
 col1, col2 = st.columns([1.0, 1.5])
 
@@ -25,6 +25,18 @@ with col4:
 st.divider()
 
 st.write("Hello! Welcome to my portfolio website! This site was built on Python, using the Streamlit module. This website is meant to showcase myself and my work in a fun, interactive way!")
+st.write("**Skills highlight:**")
+skills = ["Object Oriented Programming: Python (Intermediate to advanced), Java (some experience)", "Structured Query Language (SQL)", "Systems analysis and modelling with UML", "SAP ERP Systems Use and Analysis", "Business Process Modelling and Redesign", "User Experience Design on Figma", "Web Development: HTML/CSS, MERN Stack (Mongo DB, Express, React JS, Node JS) (limited)", "Statistics (Forecasting, trend analysis, estimation) and Data Visualization (Excel, Power BI)"]
+
+col11, col12 = st.columns([1.5, 1.5])
+
+with col11:
+    for i in skills[:4]:
+        st.markdown("- " + f"{i}")
+
+with col12:
+    for i in skills[4:]:
+        st.markdown("- " + f"{i}")
 
 st.divider()
 
@@ -51,7 +63,7 @@ with col6:
     #st.image('camera_icon.png', width = 200)
 
     markdown_with_html = """
-    <a href="http://google.com.au" target="_blank">
+    <a href="https://hebaazeefpy-8tyhtkhdfbjsvgzepnyfry.streamlit.app/Grayscale_image_generator" target="_blank">
         <img src="https://cdn3d.iconscout.com/3d/premium/thumb/camera-4492134-3728254.png?f=webp" width="160">
     </a>
     """
@@ -89,13 +101,14 @@ with col9:
 with col10:
     st.write("Video walkthrough of booking system", unsafe_allow_html=True)
     st.video('https://youtu.be/7iBLZOTYzfA?si=ctbbKDuHH5pI0YqP')
+    st.link_button(label='Phases of this project', url='http://localhost:8502/Coursework_Samples#end-to-end-skills-ux-design-course')
 
 st.divider()
 
 st.write('The BIPOC Artist Hub is a group at York University that I had the pleasure of being a Stage Manager for throughout the past 3 years. Click the image to view my work, websites, and more in relation to the position')
 
 markdown_with_html = """
-<a href="http://google.com.au" target="_blank">
+<a href="https://hebaazeefpy-8tyhtkhdfbjsvgzepnyfry.streamlit.app/BIPOC_Artist_Hub" target="_blank">
     <img src= f"HubPhotos/HUBHeader.png">
 </a>
 """

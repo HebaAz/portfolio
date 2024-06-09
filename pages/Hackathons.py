@@ -44,6 +44,8 @@ st.subheader("Seneca Affordable Housing Hackathon")
 embed_url="https://docs.google.com/presentation/d/1JFNADpHyP_yeM1TNMzdi0Hj8jDWej2VM/edit?usp=sharing&ouid=111635917264286027934&rtpof=true&sd=true"
 components.iframe(embed_url, height=600, scrolling=True)
 
+st.divider()
+
 #Hack ITE
 st.subheader("Hack ITE")
 
