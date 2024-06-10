@@ -40,13 +40,15 @@ with col12:
 
 st.divider()
 
-st.image('PythonHeader.png')
-st.caption("Click the image to interact with the program")
+#st.image('PythonHeader.png')
 
-col5, col6, col7 = st.columns([1.5, 1.5, 1.5])
+python_expander = st.expander("My Python Apps")
+
+python_expander.caption("Click the image to interact with the program")
+
+col5, col6, col7 = python_expander.columns([1.5, 1.5, 1.5])
 
 with col5:
-    st.write("<b>Todo-list app</b>", unsafe_allow_html=True)
     #st.image('', width = 200)
     #st.page_link(page='pages\Todo List.py')
 
@@ -56,10 +58,10 @@ with col5:
     </a>
     """
 
-    st.markdown(markdown_with_html, unsafe_allow_html=True)
+    python_expander.markdown(markdown_with_html, unsafe_allow_html=True)
+    python_expander.write("<b>Todo-list app</b>", unsafe_allow_html=True)
 
 with col6:
-    st.write("<b>Grayscale image generator</b>", unsafe_allow_html=True)
     #st.image('camera_icon.png', width = 200)
 
     markdown_with_html = """
@@ -68,10 +70,10 @@ with col6:
     </a>
     """
 
-    st.markdown(markdown_with_html, unsafe_allow_html=True)
+    python_expander.markdown(markdown_with_html, unsafe_allow_html=True)
+    python_expander.write("<b>Grayscale image generator</b>", unsafe_allow_html=True)
 
 with col7:
-    st.write("<b>PDF Generator (from CSV)</b>", unsafe_allow_html=True)
     #st.image('PDF_icon.png', width = 200)
     
     markdown_with_html = """
@@ -80,28 +82,28 @@ with col7:
     </a>
     """
 
-    st.markdown(markdown_with_html, unsafe_allow_html=True)
+    python_expander.markdown(markdown_with_html, unsafe_allow_html=True)
+    python_expander.write("<b>PDF Generator (from CSV)</b>", unsafe_allow_html=True)
 
-st.divider()
-
-st.image("UXHeader.png")
+#st.image("UXHeader.png")
+UX_expander = st.expander("Samples of my UI/UX design work")
 
 col8, mty3, col9, mty4, col10 = st.columns([1.5, 0.1, 1.5, 0.1, 1.5])
 
 with col8:
-    st.write("Wireframe of parking booking app \n (Hack ITE hackathon)")
-    st.image(f'hackathons_images/ITE_1.png')
-    st.link_button(label='View in Figma', url='https://www.figma.com/design/MvxZ16VElje4nDLR43XM23/Park-Smart?node-id=223-5763&t=GBRS5Lt0id46EQX0-1')
+    UX_expander.write("Wireframe of parking booking app \n (Hack ITE hackathon)")
+    UX_expander.image(f'hackathons_images/ITE_1.png')
+    UX_expander.link_button(label='View in Figma', url='https://www.figma.com/design/MvxZ16VElje4nDLR43XM23/Park-Smart?node-id=223-5763&t=GBRS5Lt0id46EQX0-1')
 
 with col9:
-    st.write("Find therapists + social media prototype (Seneca Hackathon)")
-    st.image(f'hackathons_images/Camatkar_summary.png')
-    st.link_button(label='Interact in Figma', url='https://www.figma.com/proto/j7b2LBiWJaXopTuPRdKJVT/Camatk%C4%81r?node-id=1-2&t=4ZZmWqSFUF0AB6YU-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1')
+    UX_expander.write("Find therapists + social media prototype (Seneca Hackathon)")
+    UX_expander.image(f'hackathons_images/Camatkar_summary.png')
+    UX_expander.link_button(label='Interact in Figma', url='https://www.figma.com/proto/j7b2LBiWJaXopTuPRdKJVT/Camatk%C4%81r?node-id=1-2&t=4ZZmWqSFUF0AB6YU-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1')
 
 with col10:
-    st.write("Video walkthrough of booking system", unsafe_allow_html=True)
-    st.video('https://youtu.be/7iBLZOTYzfA?si=ctbbKDuHH5pI0YqP')
-    st.link_button(label='Phases of this project', url='http://localhost:8502/Coursework_Samples#end-to-end-skills-ux-design-course')
+    UX_expander.write("Video walkthrough of booking system", unsafe_allow_html=True)
+    UX_expander.video('https://youtu.be/7iBLZOTYzfA?si=ctbbKDuHH5pI0YqP')
+    UX_expander.link_button(label='Phases of this project', url='http://localhost:8502/Coursework_Samples#end-to-end-skills-ux-design-course')
 
 st.divider()
 
@@ -117,16 +119,16 @@ st.markdown(markdown_with_html, unsafe_allow_html=True)
 
 st.divider()
 
-st.subheader("Education: ")
-st.write("Bachelors (Honors) majoring in Information Technology, specialized in Business Systems Analysis.")
-st.write("Cumulative overall GPA of 3.3 in a 4-point scale (7.05 in a 9-point scale). Sessional GPA of 3.88 in my final year (8.08 in a 9-point scale). This is calculated using York universities GPA converter.")
-st.link_button(label='Offical York University GPA conversions', url='https://secretariat.info.yorku.ca/files/Conversion-Scales-for-New-Grading-Schemes.pdf?x50430')
+educ_expander = st.expander("Education: ")
+educ_expander.write("Bachelors (Honors) majoring in Information Technology, specialized in Business Systems Analysis.")
+educ_expander.write("Cumulative overall GPA of 3.3 in a 4-point scale (7.05 in a 9-point scale). Sessional GPA of 3.88 in my final year (8.08 in a 9-point scale). This is calculated using York universities GPA converter.")
+educ_expander.link_button(label='Offical York University GPA conversions', url='https://secretariat.info.yorku.ca/files/Conversion-Scales-for-New-Grading-Schemes.pdf?x50430')
 
-st.write("**Relevant courses, descriprions of skills learned from the course, and my grade**")
-st.write("**Using and Designing Database Systems**: intermediate SQL skills, ERD modelling of database schemas (A)")
-st.write("**Object based programming**: Algorithm development. Java topics include primitive data types, control structures, classes and arrays. The use of API&#39;s to develop applications (A).")
-st.write("**Systems Analysis & Design (1 and 2)**: Design of system structure and interactions. UML diagrams in-depth, interaction design, requirements analysis, system and boundary design, object design, creation of RAD and SDD documents (A and A+)")
-st.write("**Enterprise Resource Planning Systems**: Learning about cloud technology, hands-on use of SAP using market simulations & data analysis (A+)**")
+educ_expander.write("**Relevant courses, descriprions of skills learned from the course, and my grade**")
+educ_expander.write("**Using and Designing Database Systems**: intermediate SQL skills, ERD modelling of database schemas (A)")
+educ_expander.write("**Object based programming**: Algorithm development. Java topics include primitive data types, control structures, classes and arrays. The use of API&#39;s to develop applications (A).")
+educ_expander.write("**Systems Analysis & Design (1 and 2)**: Design of system structure and interactions. UML diagrams in-depth, interaction design, requirements analysis, system and boundary design, object design, creation of RAD and SDD documents (A and A+)")
+educ_expander.write("**Enterprise Resource Planning Systems**: Learning about cloud technology, hands-on use of SAP using market simulations & data analysis (A+)**")
 
 st.divider()
 
