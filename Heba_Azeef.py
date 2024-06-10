@@ -107,15 +107,16 @@ with col10:
 
 st.divider()
 
-st.write('The BIPOC Artist Hub is a group at York University that I had the pleasure of being a Stage Manager for throughout the past 3 years. Click the image to view my work, websites, and more in relation to the position')
+BIPOC_expander = st.expander("Student leadership and management experience")
+
+BIPOC_expander.write('The BIPOC Artist Hub is a group at York University that I had the pleasure of being a Stage Manager for throughout the past 3 years. Click the image to view my work, websites, and more in relation to the position')
 
 markdown_with_html = """
 <a href="https://hebaazeefpy-8tyhtkhdfbjsvgzepnyfry.streamlit.app/BIPOC_Artist_Hub" target="_blank">
     <img src= f"HubPhotos/HUBHeader.png">
 </a>
 """
-
-st.markdown(markdown_with_html, unsafe_allow_html=True)
+BIPOC_expander.markdown(markdown_with_html, unsafe_allow_html=True)
 
 st.divider()
 
