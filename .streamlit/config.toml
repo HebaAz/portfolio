@@ -1,11 +1,11 @@
 [theme]
 
 # primary interactive element accent
-primaryColour = '#17252A'
+primaryColour = '#F7882F'
 
-backgroundColor = '#3AAFA9'
+backgroundColor = '#99E1D9'
 
-secondaryBackgroundColor = '#0083B8'
+secondaryBackgroundColor = '#3AAFA9'
 
 textColor = '#FFFFFF'
 
