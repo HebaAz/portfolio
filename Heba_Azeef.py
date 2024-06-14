@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_icon=":ribbon:", layout="wide")
 
-for i in range(8):
+for i in range(9):
     st.text("")
 
 col1, col2 = st.columns([1.5, 1.5])
@@ -13,30 +13,23 @@ with col1:
     st.write("I am a developer, UX designer, and analyst with a Bachelor's degree in Information Technology, specializing in business systems analysis.")
     st.write("I have skills and experience with Python, Structured Query Language (SQL), UX Design, Prototyping (Figma), Business Analysis, Systems Analysis, UML, Business Proceess Redesign, and Web Design (HTML, JavaScript, React)")
 
-for i in range(16):
+for i in range(6):
     st.text("")
 
 markdown_with_html = """
     <div style="display: flex; justify-content: center; align-items: center;">
-        <img src="https://icons.veryicon.com/png/o/miscellaneous/simple-and-round-line-mark/down-arrow-56.png" width="100">
+        <img src="https://icons.veryicon.com/png/o/miscellaneous/simple-and-round-line-mark/down-arrow-56.png" width="80">
     </div>
 """
 st.markdown(markdown_with_html, unsafe_allow_html=True)
 
+st.text("")
+st.text("")
+st.text("")
 
 #st.image("headshot.png")
 
 #st.write("**A bit about me:** Some of my hobbies include acrylic painting, scrapbooking, learning new technology hands on, and participating in hackathons.")
-
-col3, col4, mty2 = st.columns([1.5, 1.5, 2])
-
-with col3:
-    st.write(":envelope_with_arrow: heba.azeef@gmail.com")
-
-with col4:
-    st.write(":telephone_receiver: 437-350-7040")
-
-st.divider()
 
 st.write("Hello! Welcome to my portfolio website! This site was built on Python, using the Streamlit module. This website is meant to showcase myself and my work in a fun, interactive way!")
 st.write("**Skills highlight:**")
@@ -144,6 +137,18 @@ educ_expander.write("**Using and Designing Database Systems**: intermediate SQL 
 educ_expander.write("**Object based programming**: Algorithm development. Java topics include primitive data types, control structures, classes and arrays. The use of API&#39;s to develop applications (A).")
 educ_expander.write("**Systems Analysis & Design (1 and 2)**: Design of system structure and interactions. UML diagrams in-depth, interaction design, requirements analysis, system and boundary design, object design, creation of RAD and SDD documents (A and A+)")
 educ_expander.write("**Enterprise Resource Planning Systems**: Learning about cloud technology, hands-on use of SAP using market simulations & data analysis (A+)**")
+
+st.divider()
+
+st.subheader("Contact me")
+
+col3, col4, mty2 = st.columns([1.5, 1.5, 2])
+
+with col3:
+    st.write(":envelope_with_arrow: heba.azeef@gmail.com")
+
+with col4:
+    st.write(":telephone_receiver: 437-350-7040")
 
 st.divider()
 
