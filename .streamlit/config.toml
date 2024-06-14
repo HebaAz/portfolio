@@ -3,10 +3,10 @@
 # primary interactive element accent
 primaryColour = '#F7882F'
 
-backgroundColor = '#99E1D9'
+backgroundColor = '#3AAFA9'
 
-secondaryBackgroundColor = '#3AAFA9'
+secondaryBackgroundColor = '#116466'
 
-textColor = '#6B7A8F'
+textColor = '#FFFFFF'
 
 font = "sans serif"
