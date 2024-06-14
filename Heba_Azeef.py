@@ -36,7 +36,7 @@ st.text("")
 
 st.write("Hello! Welcome to my portfolio website! This site was built on Python, using the Streamlit module. This website is meant to showcase myself and my work in a fun, interactive way!")
 st.write("**Skills highlight:**")
-skills = ["Object Oriented Programming: Python (Intermediate to advanced), Java (some experience)", "Structured Query Language (SQL)", "Systems analysis and modelling with UML", "SAP ERP Systems Use and Analysis", "Business Process Modelling and Redesign", "User Experience Design on Figma", "Web Development: HTML/CSS, MERN Stack (Mongo DB, Express, React JS, Node JS) (limited)", "Statistics (Forecasting, trend analysis, estimation) and Data Visualization (Excel, Power BI)"]
+skills = ["Object Oriented Programming: Python (intermediate/advanced), Java (some experience)", "Structured Query Language (SQL)", "Systems analysis and modelling with UML", "SAP ERP Systems Use and Analysis", "Business Process Modelling and Redesign", "User Experience Design on Figma", "Web Development: HTML/CSS, MERN Stack (Mongo DB, Express, React JS, Node JS) (limited)", "Statistics (Forecasting, trend analysis, estimation) and Data Visualization (Excel, Power BI)"]
 
 col11, col12 = st.columns([1.5, 1.5])
 
