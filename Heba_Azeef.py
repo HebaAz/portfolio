@@ -1,18 +1,32 @@
 import streamlit as st
 
-st.set_page_config(page_icon=":ribbon:", layout="centered")
+st.set_page_config(page_icon=":ribbon:", layout="wide")
 
-st.title("Heba Azeef")
-st.caption("Information technology: Software Engineering, UX Design, Business Analysis")
+for i in range(8):
+    st.text("")
 
-col1, col2 = st.columns([1.0, 1.5])
+col1, col2 = st.columns([1.5, 1.5])
 
 with col1:
-    st.image("headshot.png")
+    st.title("Hello, I'm Heba Azeef")
+    #st.write("Information technology: Software Engineering, UX Design, Business Analysis")
+    st.write("I am a developer, UX designer, and analyst with a Bachelor's degree in Information Technology, specializing in business systems analysis.")
+    st.write("I have skills and experience with Python, Structured Query Language (SQL), UX Design, Prototyping (Figma), Business Analysis, Systems Analysis, UML, Business Proceess Redesign, and Web Design (HTML, JavaScript, React)")
 
-with col2:
-    st.write("**Professional summary:** Skilled Developer with a Bachelor's degree in Information Technology and experience in software development in Python, Java and User Interface (HTML, JavaScript, React). Experience in Business Analysis, Databases, Systems Analysis and Prototyping (Figma). I am authorized to work in the US as I am a dual US and Canadian citizen. I am currently in Canada for school, however am going to relocate based on where I work")
-    st.write("**A bit about me:** Some of my hobbies include acrylic painting, scrapbooking, learning new technology hands on, and participating in hackathons.")
+for i in range(16):
+    st.text("")
+
+markdown_with_html = """
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <img src="https://icons.veryicon.com/png/o/miscellaneous/simple-and-round-line-mark/down-arrow-56.png" width="100">
+    </div>
+"""
+st.markdown(markdown_with_html, unsafe_allow_html=True)
+
+
+#st.image("headshot.png")
+
+#st.write("**A bit about me:** Some of my hobbies include acrylic painting, scrapbooking, learning new technology hands on, and participating in hackathons.")
 
 col3, col4, mty2 = st.columns([1.5, 1.5, 2])
 
@@ -134,4 +148,4 @@ educ_expander.write("**Enterprise Resource Planning Systems**: Learning about cl
 st.divider()
 
 st.caption("Please note that some icons are not mine, however all code, apps, and Figma designs are created by me or created by myself in collaboration with others. Icons are simply used for viusal or learning purposes.")
-st.caption("Sources for icons: iconscout, Udemy Andrew Sulce, Figma libraries")
+st.caption("Sources for icons: iconscout, veryicon, Udemy Andrew Sulce, Figma libraries")
