@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_icon=":ribbon:", layout="wide")
 
-for i in range(9):
+for i in range(8):
     st.text("")
 
 col1, col2 = st.columns([1.5, 1.5])
@@ -21,7 +21,7 @@ for i in range(6):
 
 markdown_with_html = """
     <div style="display: flex; justify-content: center; align-items: center;">
-        <img src="https://icons.veryicon.com/png/o/miscellaneous/simple-and-round-line-mark/down-arrow-56.png" width="80">
+        <img src="https://popupfilmresidency.org/wp-content/uploads/2019/05/white-down-arrow-png-2.png" width="80">
     </div>
 """
 st.markdown(markdown_with_html, unsafe_allow_html=True)
