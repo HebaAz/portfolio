@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_icon=":ribbon:", layout="wide")
 
-for i in range(8):
+for i in range(5):
     st.text("")
 
 col1, col2 = st.columns([1.5, 1.5])
@@ -16,7 +16,7 @@ with col1:
 with col2:
     st.image("meSummary.png", use_column_width=True)
 
-for i in range(6):
+for i in range(4):
     st.text("")
 
 markdown_with_html = """
