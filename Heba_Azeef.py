@@ -13,6 +13,9 @@ with col1:
     st.write("I am a developer, UX designer, and analyst with a Bachelor's degree in Information Technology, specializing in business systems analysis.")
     st.write("I have skills and experience with Python, Structured Query Language (SQL), UX Design, Prototyping (Figma), Business Analysis, Systems Analysis, UML, Business Proceess Redesign, and Web Design (HTML, JavaScript, React)")
 
+with col2:
+    st.image("meSummary.png", use_column_width=True)
+
 for i in range(6):
     st.text("")
 
