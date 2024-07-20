@@ -8,6 +8,10 @@ for i in range(5):
 col1, col2 = st.columns([1.5, 1.5])
 
 with col1:
+    st.text("")
+    st.text("")
+    st.text("")
+
     st.title("Hello, I'm Heba Azeef")
     #st.write("Information technology: Software Engineering, UX Design, Business Analysis")
     st.write("I am a developer, UX designer, and analyst with a Bachelor's degree in Information Technology, specializing in business systems analysis.")
@@ -16,16 +20,7 @@ with col1:
 with col2:
     st.image("meSummary.png", use_column_width=True)
 
-for i in range(4):
-    st.text("")
-
-markdown_with_html = """
-    <div style="display: flex; justify-content: center; align-items: center;">
-        <img src="https://popupfilmresidency.org/wp-content/uploads/2019/05/white-down-arrow-png-2.png" width="80">
-    </div>
-"""
-st.markdown(markdown_with_html, unsafe_allow_html=True)
-
+st.text("")
 st.text("")
 st.text("")
 st.text("")
@@ -54,9 +49,9 @@ st.divider()
 
 python_expander = st.expander("My Python Apps")
 
-python_expander.caption("Click the image to interact with the program")
+#python_expander.caption("Click the image to interact with the program")
 
-col5, col6, col7 = python_expander.columns([1.5, 1.5, 1.5])
+col5, col6, col7 = st.columns([1.5, 1.5, 1.5])
 
 with col5:
     #st.image('', width = 200)
@@ -68,8 +63,8 @@ with col5:
     </a>
     """
 
-    python_expander.markdown(markdown_with_html, unsafe_allow_html=True)
-    python_expander.write("<b>Todo-list app</b>", unsafe_allow_html=True)
+    st.markdown(markdown_with_html, unsafe_allow_html=True)
+    st.write("<b>Todo-list app</b>", unsafe_allow_html=True)
 
 with col6:
     #st.image('camera_icon.png', width = 200)
@@ -80,8 +75,8 @@ with col6:
     </a>
     """
 
-    python_expander.markdown(markdown_with_html, unsafe_allow_html=True)
-    python_expander.write("<b>Grayscale image generator</b>", unsafe_allow_html=True)
+    st.markdown(markdown_with_html, unsafe_allow_html=True)
+    st.write("<b>Grayscale image generator</b>", unsafe_allow_html=True)
 
 with col7:
     #st.image('PDF_icon.png', width = 200)
@@ -92,8 +87,8 @@ with col7:
     </a>
     """
 
-    python_expander.markdown(markdown_with_html, unsafe_allow_html=True)
-    python_expander.write("<b>PDF Generator (from CSV)</b>", unsafe_allow_html=True)
+    st.markdown(markdown_with_html, unsafe_allow_html=True)
+    st.write("<b>PDF Generator (from CSV)</b>", unsafe_allow_html=True)
 
 #st.image("UXHeader.png")
 UX_expander = st.expander("Samples of my UI/UX design work")
