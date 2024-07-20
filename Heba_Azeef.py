@@ -24,6 +24,10 @@ st.text("")
 st.text("")
 st.text("")
 st.text("")
+st.text("")
+st.text("")
+st.text("")
+st.text("")
 
 #st.image("headshot.png")
 
