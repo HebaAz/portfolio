@@ -1,12 +1,13 @@
 [theme]
 
 # primary interactive element accent
-primaryColour = '#F7882F'
+primaryColour = '#F2AE30'
 
-backgroundColor = '#3AAFA9'
+# Main background
+backgroundColor = '#8D92F2'
 
-secondaryBackgroundColor = '#116466'
+secondaryBackgroundColor = '#3D46F2'
 
-textColor = '#FFFFFF'
+textColor = '#0D0126'
 
 font = "sans serif"
